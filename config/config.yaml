@@ -1,0 +1,17 @@
+
+analysis:
+  ela_quality: 95
+  ela_threshold: 30
+  block_size: 16
+
+scoring:
+  weights:
+    ela: 0.4
+    noise: 0.25
+    edges: 0.2
+    exif: 0.15
+  suspicious_software: ["Adobe", "Photoshop", "GIMP", "Snapseed"]
+
+retrieval:
+  hash_index_path: ./data/index/hash_index.json
+  top_k: 4

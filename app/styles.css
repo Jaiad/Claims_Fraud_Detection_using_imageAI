@@ -1,0 +1,47 @@
+
+:root {
+  --bg: #ffffff;
+  --text: #c6cad5; 
+  --muted: #64748b; 
+  --primary: #2563eb; 
+  --accent: #0ea5e9; 
+  --card: #f8fafc; 
+  --border: #e2e8f0; 
+}
+
+html, body, [class*="css"]  {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+section.main > div { padding-top: 0.5rem; }
+
+h1,h2,h3,h4 { color: var(--text); }
+
+.stButton > button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background: var(--border);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.score-ok { color: #10b981; }
+.score-warn { color: #f59e0b; }
+.score-bad { color: #ef4444; }
